@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaste Restaurant - Apno Ke Sath Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">🍛 Namaste Restaurant</h1>
+    <p class="tagline">Apno Ke Sath Restaurant</p>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Namaste Restaurant</h2>
+      <p>Authentic Indian flavors, made with love and tradition.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Namaste Restaurant is where taste meets tradition. We bring you authentic Indian dishes prepared with the finest ingredients and heartfelt hospitality.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>📍 Address: MG Road, Delhi<br>📞 Phone: +91- 9128409763<br>✉️ Email: info@namasterestaurant.com</p>
+  </section>
+
+  <div id="favouritesPanel" class="side-panel left-panel">
+    <h3>❤️ Favourites</h3>
+    <ul id="favouritesList"></ul>
+  </div>
+
+  <div id="cartPanel" class="side-panel right-panel">
+    <h3>🛒 Your Cart</h3>
+    <ul id="cartList"></ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Namaste Restaurant | Designed with ❤️ by Shivank Ranjan</p>
+  </footer>
+</body>
+</html>

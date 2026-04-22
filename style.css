@@ -1,0 +1,148 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8f0;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #7a2d15ff, #ffb74d);
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #222;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1606755962773-0e30df1a9c3b?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero-text {
+  background: rgba(0,0,0,0.5);
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+.menu-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  margin: 15px 0 5px;
+}
+
+button {
+  background: #ff7043;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff5722;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  z-index: 10;
+}
+
+.left-panel {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.right-panel {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.side-panel.active {
+  transform: translateX(0);
+}
+
+footer {
+  text-align: center;
+  background: #ff7043;
+  color: white;
+  padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
